@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>معرض الصور</title>
+  <style>
+  body {
+  font-family: "Tahoma", sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+nav {
+  background: #333;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+  </style>
+  
+</head>
+<body>
+    <nav>
+    <a href="index.html"> الرئيسية </a>
+    </nav>
+  <h1>📸 معرض الصور</h1>
+  <div class="gallery">
+    <img src="images/FB_IMG_1768295369715_114540.jpg" alt="صورة 1">
+    <img src="images/FB_IMG_1768295376222_114539.jpg" alt="صورة 2">
+    <img src="images/FB_IMG_1768295387465_114537.jpg" alt="صورة 3">
+    <img src="images/FB_IMG_1768295420436_114532.jpg" alt="صورة 4">
+  </div>
+</body>
+</html>
